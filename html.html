@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    
+
+</head>
+<body>
+
+  
+   <div class="countainer">
+      <div class="todo-app">
+        <h2  class="bg-green-500">TO_DO_APP</h2>
+        <div class="row">
+          <input type="text" id="input_box" placeholder="ADD YOUR TEXT">
+          <button id="btn" onclick="addTask()">ADD</button>
+        </div>
+        <ul id="list_container">
+         <!--  -->
+        </ul>
+      </div>
+   </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
